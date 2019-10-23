@@ -1,6 +1,6 @@
 <template>
   <ul class="todo-main">
-    <toDosItem></toDosItem>
+    <toDosItem :todoList="todoList"></toDosItem>
   </ul>
 
 
