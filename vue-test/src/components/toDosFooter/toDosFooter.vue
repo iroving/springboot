@@ -13,7 +13,7 @@
 <script>
     export default {
         props: {
-          todoList:todoList
+          todoList:Array
         },
     };
 </script>

@@ -11,7 +11,10 @@
 
   export default {
     props: {
-      todoList:todoList
+      todoList:Array
     },
+    components:{
+      toDosItem
+    }
   };
 </script>
