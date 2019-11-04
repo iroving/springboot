@@ -1,7 +1,7 @@
 <template>
   <div class="toDosAll">
         <toDosHeader :todoList="todoList" :addTodo="addTodo"></toDosHeader>
-        <toDosList :todoList="todoList"></toDosList>
+        <toDosList :todoList="todoList" :delTodo="delTodo"></toDosList>
         <toDosFooter :todoList="todoList"></toDosFooter>
     </div>
 </template>
@@ -26,6 +26,9 @@
       methods:{
         addTodo(todoItem){
           this.todoList.push(todoItem);
+        },
+        delTodo(index){
+          this.todoList.splice(index, 1);
         }
       }
     };
