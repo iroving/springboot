@@ -5,7 +5,7 @@
         <input type="checkbox" v-model="value.isCheck"/>
         <span>{{value.message}}</span>
       </label>
-      <button class="btn btn-danger" @click="delTodoItem(index)" v-show="isShow">删除</button>
+      <button class="btn btn-danger" @click="delTodoItem(key)" v-show="isShow">删除</button>
     </li>
   </div>
 </template>
