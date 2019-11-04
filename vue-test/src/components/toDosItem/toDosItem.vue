@@ -1,6 +1,6 @@
 <template>
   <div>
-    <li @mouseenter="changeStyle(true)" @mouseleave="changeStyle(false)">
+    <li @mouseenter="changeStyle(true)" @mouseleave="changeStyle(false)" :style="{backgroundColor:color}">
       <label>
         <input type="checkbox" v-model="value.isCheck"/>
         <span>{{value.message}}</span>
@@ -20,7 +20,8 @@
     },
     data(){
       return {
-        isShow: false
+        isShow: false,
+        color: "white"
       };
     },
     methods: {
@@ -30,8 +31,10 @@
       changeStyle(flag){
         if (flag) {
           this.isShow = true;
+          this.color = "grey";
         } else {
           this.isShow = false;
+          this.color = "white";
         }
       }
     }
