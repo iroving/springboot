@@ -10,17 +10,26 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      // '/vue-test': {    //将www.exaple.com印射为/apis
+      //   target: 'http://10.0.38.205:9091',  // 接口域名10.0.38.32:8081
+      //   secure: false,  // 如果是https接口，需要配置这个参数
+      //   changeOrigin: true,  //是否跨域
+      //   pathRewrite: {
+      //     '^/': ''   //需要rewrite的,
+      //   }
+      // }
+    },
 
     // Various Dev Server settings
-    host: 'localhost', // can be overwritten by process.env.HOST
+    host: '10.0.38.205', // can be overwritten by process.env.HOST
     port: 9090, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
 
-    
+
     /**
      * Source Maps
      */
