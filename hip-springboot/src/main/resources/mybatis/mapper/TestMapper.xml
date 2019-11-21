@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="hip.cda.hipcda.mapper.TestMapper">
+    <resultMap id="testMap" type="hip.cda.hipcda.entity.TestEntity">
+        <id property="id" column="ID"/>
+        <result property="key" column="KEY"/>
+        <result property="value" column="VALUE"/>
+    </resultMap>
+
+    <select id="findById" parameterType="String" resultMap="testMap">
+		select u.ID,
+		u.KEY,
+		u.VALUE
+		from MDM_SYS_DIC u
+        where u.ID= #{id}
+	</select>
+</mapper>
