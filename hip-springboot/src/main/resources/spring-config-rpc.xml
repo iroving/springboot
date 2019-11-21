@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:ssdev="http://www.bsoft.com.cn/schema/ssdev"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
-	http://www.springframework.org/schema/beans/spring-beans.xsd         
-	http://www.bsoft.com.cn/schema/ssdev
-	http://www.bsoft.com.cn/schema/ssdev/ssdev.xsd">
+<!--<?xml version="1.0" encoding="UTF-8" ?>-->
+<!--<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+       <!--xmlns:ssdev="http://www.bsoft.com.cn/schema/ssdev"-->
+       <!--xsi:schemaLocation="http://www.springframework.org/schema/beans-->
+	<!--http://www.springframework.org/schema/beans/spring-beans.xsd         -->
+	<!--http://www.bsoft.com.cn/schema/ssdev-->
+	<!--http://www.bsoft.com.cn/schema/ssdev/ssdev.xsd">-->
 
-    <bean id="appContextHolder" class="ctd.util.AppContextHolder">
-        <property name="devMode" value="true"></property>
-    </bean>
+    <!--<bean id="appContextHolder" class="ctd.util.AppContextHolder">-->
+        <!--<property name="devMode" value="true"></property>-->
+    <!--</bean>-->
 
-    <ssdev:applicationDomain name="bsoftcda" registryAddress="zookeeper://10.10.2.61:2181"
-                             rpcServerWorkUrl="hessian://10.0.38.32:8080/hip-cda-springboot/rpc/" enableLogger="false"/>
+    <!--<ssdev:applicationDomain name="bsoftcda" registryAddress="zookeeper://10.10.2.61:2181"-->
+                             <!--rpcServerWorkUrl="hessian://10.0.38.32:8080/hip-cda-springboot/rpc/" enableLogger="false"/>-->
 
-    <ssdev:rpcService-scan base-package="hip.cda.hipcda.rpc"/>
+    <!--<ssdev:rpcService-scan base-package="hip.cda.hipcda.rpc"/>-->
 
-</beans>
+<!--</beans>-->
